@@ -1,0 +1,8 @@
+.exercism/
+.gradle/
+.idea/
+build/
+*gradle*
+test/
+*.md
+*iml
