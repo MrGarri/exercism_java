@@ -6,11 +6,9 @@ public class PigLatinTranslator {
     public String translate(String input) {
 
         String[] split = input.split(" ");
-        String result = "";
 
-        for(String s : split) {
-            result += translateWord(s) + " ";
-        }
+        String result = Arrays.stream(split).
+                map(this::translateWord).collect(Collectors.joining(" "));
 
         return result.trim();
 
