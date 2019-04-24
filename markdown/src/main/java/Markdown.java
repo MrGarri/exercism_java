@@ -26,7 +26,7 @@ class Markdown {
             } else if (!line.startsWith("<li>") && activeList) {
                 activeList = false;
                 result.append("</ul>");
-            }l
+            }
 
             result.append(line);
         }
