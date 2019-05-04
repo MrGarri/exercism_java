@@ -25,6 +25,7 @@ class LuhnValidator {
                 .sum();
 
         return sum % 10 == 0;
+
     }
 
 }
